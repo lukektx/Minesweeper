@@ -22,13 +22,13 @@ void setup() {
   surface.setSize(500, 500);
   menu = true;
   surface.setResizable(true);
-  mine = loadImage("mine.jpg");
-  tile = loadImage("tile.jpg");
-  flag = loadImage("flag.jpg");
-  unc = loadImage("tile_uncovered.jpg");
+  mine = loadImage("Assets/mine.jpg");
+  tile = loadImage("Assets/tile.jpg");
+  flag = loadImage("Assets/flag.jpg");
+  unc = loadImage("Assets/tile_uncovered.jpg");
   nums = new PImage[8];
   for (int i = 0; i < nums.length; i++) {
-    nums[i] = loadImage((i + 1) + ".jpg");
+    nums[i] = loadImage("Assets/" +(i + 1) + ".jpg");
   }
 }
 void draw() {
